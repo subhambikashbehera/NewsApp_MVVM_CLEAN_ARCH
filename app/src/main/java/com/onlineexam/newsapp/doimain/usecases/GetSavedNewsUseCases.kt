@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 class GetSavedNewsUseCases(private val newsRepository: NewsRepository) {
 
-    fun excecute(): Flow<List<Article>> = newsRepository.getSavedNews()
+    fun excecute(): Flow<List<Article?>> = newsRepository.getSavedNews()
 }
