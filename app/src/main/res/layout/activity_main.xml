@@ -21,16 +21,37 @@
             app:navGraph="@navigation/bottom_nav_graph"
             />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNav"
+
+        <com.google.android.material.bottomappbar.BottomAppBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/menu"
-            app:itemIconTint="@color/black"
             android:layout_gravity="bottom"
-            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-            />
+            android:id="@+id/bottomBar"
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/menu"
+                app:itemIconTint="@color/black"
+                app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+                />
 
+
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/floatingActionButton"
+            app:layout_anchor="@id/bottomBar"
+            android:contentDescription="@string/data"
+            android:scaleType="centerCrop"
+
+            />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

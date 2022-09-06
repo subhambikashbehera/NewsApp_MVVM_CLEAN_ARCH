@@ -9,4 +9,12 @@
         android:id="@+id/savedNewsFragment"
         android:icon="@drawable/ic_baseline_save_24"
         android:title="Saved News" />
+
+
+    <item
+        android:id="@+id/extraFragment"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="Saved News" />
+
+
 </menu>
